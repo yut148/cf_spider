@@ -27,6 +27,7 @@ open_project = doc.xpath('//section[@class="projectBox"]')
 
     p node.css('h2').inner_text
     p node.css('dd').inner_text
+    puts ""
 
     amount = amount + node.css('/div/div[1]/dl/dd').inner_text.gsub(/[^0-9]/,'').to_i
 

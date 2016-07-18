@@ -38,9 +38,9 @@ open_project = doc.xpath('//section[@class="fresh"]/div/div[2]/div')
     end
 
     p node.css('h4').inner_text
-
     p node.css('div/div[5]/div[1]').inner_text
     p node.css('div/div[5]/div[2]').inner_text
+    puts ""
     amount = amount + node.css('div/div[5]/div[1]').inner_text.gsub(/[^0-9]/,'').to_i
     project_counter = project_counter + 1
 
