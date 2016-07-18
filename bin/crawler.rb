@@ -36,4 +36,5 @@ open_project = doc.xpath('//section[@class="projectBox"]')
   total_open_project = total_open_project + open_project.length
 end
 
+puts "Makuakeの#{Time.now}時点の公開プロジェクト"
 p "合計#{total_open_project}プロジェクト 支援総額#{@total_amount}円"
